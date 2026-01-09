@@ -1,17 +1,20 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 interface NavbarProps {
   isScrolled: boolean;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const handleRefresh = () => {
     window.scrollTo(0, 0);
     window.location.reload();
   };
 
   return (
+    <>
     <nav 
       className={`fixed z-50 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
         isScrolled 
@@ -22,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
       <div className={`flex items-center ${isScrolled ? 'justify-center gap-8' : 'max-w-7xl mx-auto px-6 justify-between'}`}>
         
         {/* Navigation Links - Left Group */}
-        <div className={`flex items-center ${isScrolled ? 'space-x-6' : 'space-x-12'} text-[11px] font-bold uppercase tracking-[0.15em] ${isScrolled ? 'hidden md:flex' : 'flex'}`}>
+        <div className={`hidden md:flex items-center ${isScrolled ? 'space-x-6' : 'space-x-12'} text-[11px] font-bold uppercase tracking-[0.15em]`}>
           <a href="#about" className="text-white/70 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] transition-all">About</a>
           <a href="#services" className="text-white/70 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] transition-all">Services</a>
           {!isScrolled && (
@@ -50,8 +53,41 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             <a href="#contact" className="text-white/70 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] transition-all">Contact</a>
           </div>
         )}
+
+        {/* Mobile Menu Toggle */}
+        <button 
+          className={`md:hidden text-white hover:text-[var(--neon-cyan)] transition-colors ${isScrolled ? '' : 'absolute right-6'}`}
+          onClick={() => setIsMobileMenuOpen(true)}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
     </nav>
+
+    {/* Mobile Fullscreen Menu */}
+    <div className={`fixed inset-0 z-[100] bg-[#050508]/95 backdrop-blur-2xl transition-transform duration-500 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'} flex flex-col items-center justify-center md:hidden`}>
+      <button 
+        onClick={() => setIsMobileMenuOpen(false)}
+        className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div className="mb-16 text-center">
+          <h2 className="text-3xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-400">
+            SHIVRTOWALA
+          </h2>
+          <div className="h-0.5 w-full bg-gradient-to-r from-[var(--neon-cyan)] to-[var(--neon-pink)] mt-2"></div>
+      </div>
+
+      <div className="flex flex-col items-center space-y-8">
+        <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light tracking-[0.2em] text-white/80 hover:text-[var(--neon-cyan)] transition-colors uppercase">About</a>
+        <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light tracking-[0.2em] text-white/80 hover:text-[var(--neon-cyan)] transition-colors uppercase">Services</a>
+        <a href="#inquiry" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light tracking-[0.2em] text-white/80 hover:text-[var(--neon-cyan)] transition-colors uppercase">Inquiry</a>
+        <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light tracking-[0.2em] text-white/80 hover:text-[var(--neon-cyan)] transition-colors uppercase">Contact</a>
+      </div>
+    </div>
+    </>
   );
 };
 

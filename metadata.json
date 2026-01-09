@@ -1,0 +1,7 @@
+{
+  "name": "Gujarat RTO Services - Premium Concierge",
+  "description": "A luxury, automotive-inspired web portal for Gujarat RTO services, featuring streamlined processes for licensing, registration, and permits with a high-end Land Rover Defender aesthetic.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -44,14 +44,14 @@ const App: React.FC = () => {
         
         <HeritageSection />
 
-        <section id="services" className="bg-[#050505] py-20">
+        <section id="services" className="bg-[#050505] py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-6">
-            <header className="mb-32">
-              <div className="flex items-center space-x-6 mb-8">
+            <header className="mb-16 md:mb-32">
+              <div className="flex items-center space-x-6 mb-4 md:mb-8">
                 <span className="text-[var(--neon-cyan)] text-xs font-black uppercase tracking-[0.5em] mono">Direct Access</span>
                 <div className="h-[1px] flex-1 bg-white/10"></div>
               </div>
-              <h2 className="text-7xl md:text-[9rem] font-black text-white leading-[0.85] tracking-tighter">
+              <h2 className="text-5xl md:text-7xl lg:text-[9rem] font-black text-white leading-[0.9] md:leading-[0.85] tracking-tighter">
                 SERVICE<br /><span className="hero-title">MODULES.</span>
               </h2>
             </header>

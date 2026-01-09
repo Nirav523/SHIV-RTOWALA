@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         <img src="/images/logo.png" alt="Logo" className="h-12 w-auto object-contain opacity-90" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-96 md:pt-32">
+      <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-32 md:pt-32">
         {/* Left Section */}
         <div className="flex flex-col justify-center">
           <h1 className="text-white text-6xl md:text-8xl lg:text-[9rem] font-black leading-[0.85] tracking-tighter mb-10">
@@ -44,12 +44,12 @@ const Hero: React.FC = () => {
         </div>
         
         {/* Right Section */}
-        <div className="flex flex-col items-start lg:items-end gap-10 pr-16">
+        <div className="flex flex-col items-start lg:items-end gap-10 lg:pr-16">
             <div className="flex flex-col items-center gap-6 group mb-4">
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/1024px-Emblem_of_India.svg.png" 
                 alt="Satyamev Jayate" 
-                className="h-[28rem] w-auto invert opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                className="h-48 md:h-[28rem] w-auto invert opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               />
               <div className="text-center">
                 <span className="block text-sm font-bold text-white uppercase tracking-[0.2em] mb-1">Satyamev Jayate</span>

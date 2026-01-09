@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/public/images/def-1.jpg" 
+          src="/images/def-1.jpg" 
           alt="Land Rover Defender" 
           className="w-full h-full object-cover opacity-80 scale-105 animate-[subtle-zoom_20s_infinite_alternate]"
         />
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       
       {/* Top Right Logo */}
       <div className="absolute top-6 right-10 z-20">
-        <img src="/public/images/logo.png" alt="Logo" className="h-12 w-auto object-contain opacity-90" />
+        <img src="/images/logo.png" alt="Logo" className="h-12 w-auto object-contain opacity-90" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-32">

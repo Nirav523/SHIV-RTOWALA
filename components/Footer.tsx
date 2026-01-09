@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
           {/* Brand Column */}
           <div className="md:col-span-4">
-            <img src="/public/images/logo.png" alt="Shivrtowala Logo" className="h-16 w-auto mb-6" />
+            <img src="/images/logo.png" alt="Shivrtowala Logo" className="h-16 w-auto mb-6" />
             <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-6">
               SHIV<span className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-6">RTOWALA</span>
             </h2>

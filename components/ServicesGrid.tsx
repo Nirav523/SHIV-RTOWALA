@@ -6,25 +6,25 @@ const services = [
     id: "SVR-01", 
     title: "DRIVING LICENSE", 
     desc: "NEW / RENEWAL / DUPLICATE", 
-    img: "/public/images/dl.jpeg"
+    img: "/images/dl.jpeg"
   },
   { 
     id: "SVR-02", 
     title: "VEHICLE RC", 
     desc: "TRANSFER / HYPOTHECATION", 
-    img: "/public/images/rc.jpg"
+    img: "/images/rc.jpg"
   },
   { 
     id: "SVR-03", 
     title: "RC FITNESS", 
     desc: "EXTENT FITNESS / TEMPORARY", 
-    img: "/public/images/fc.jpg"
+    img: "/images/fc.jpg"
   },
   { 
     id: "SVR-04", 
     title: "INSURANCE", 
     desc: "TWO, FOUR HEAVY VEHICLES INSURANCE", 
-    img: "/public/images/ins.jpg"
+    img: "/images/ins.jpg"
   }
 ];
 

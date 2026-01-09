@@ -9,7 +9,7 @@ const DefenderShowcase: React.FC = () => {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative group">
               <img 
-                src="/public/images/office.png" 
+                src="/images/office.png" 
                 alt="Cyber Security" 
                 className="w-full rounded-3xl shadow-2xl opacity-80 hover:opacity-100 transition-all duration-700"
               />

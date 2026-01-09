@@ -17,11 +17,11 @@ const Hero: React.FC = () => {
       </div>
       
       {/* Top Right Logo */}
-      <div className="absolute top-6 right-10 z-20">
+      <div className="absolute top-6 right-10 z-20 hidden md:block">
         <img src="/images/logo.png" alt="Logo" className="h-12 w-auto object-contain opacity-90" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-48 md:pt-32">
+      <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-64 md:pt-32">
         {/* Left Section */}
         <div className="flex flex-col justify-center">
           <h1 className="text-white text-6xl md:text-8xl lg:text-[9rem] font-black leading-[0.85] tracking-tighter mb-10">

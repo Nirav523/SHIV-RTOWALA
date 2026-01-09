@@ -65,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
     </nav>
 
     {/* Mobile Fullscreen Menu */}
-    <div className={`fixed inset-0 z-[100] bg-[#050508]/95 backdrop-blur-2xl transition-transform duration-500 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'} flex flex-col items-center justify-start pt-32 md:hidden`}>
+    <div className={`fixed inset-0 z-[100] bg-[#050508]/95 backdrop-blur-2xl transition-transform duration-500 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'} flex flex-col items-center justify-start pt-48 md:hidden`}>
       <button 
         onClick={() => setIsMobileMenuOpen(false)}
         className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors"

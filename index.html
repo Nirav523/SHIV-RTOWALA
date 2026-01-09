@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <title>Gujarat RTO | SHIV RTOWALA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -78,6 +78,11 @@
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 0 20px rgba(0, 242, 234, 0.3));
         }
+
+        @media (hover: none) and (pointer: coarse) {
+            body { cursor: auto; }
+            #custom-cursor { display: none; }
+        }
     </style>
 <script type="importmap">
 {
@@ -95,7 +100,7 @@
     <div id="custom-cursor"></div>
     <div id="root"></div>
     <div class="w-full text-center py-6 bg-white">
-        <span class="mono text-[10px] text-black tracking-[0.2em]">CREATED BY : RUDRAKSH INNOVATIONS</span>
+        <span class="mono text-xs md:text-[10px] text-black tracking-[0.2em]">CREATED BY : RUDRAKSH INNOVATIONS</span>
     </div>
     <script>
         const cursor = document.getElementById('custom-cursor');

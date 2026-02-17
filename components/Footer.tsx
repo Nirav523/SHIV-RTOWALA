@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
               <div className="absolute inset-0 bg-[var(--neon-cyan)]/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               <div className="relative bg-[#0a0a0c] border border-white/10 p-8 rounded-2xl flex flex-col items-center text-center hover:border-[var(--neon-cyan)]/30 transition-colors duration-300">
                 <img 
-                  src="/public/images/stj.png"
+                  src="/public/images/Stj.png"
                   alt="Government of India" 
                   className="h-24 w-auto mb-6 invert opacity-80 group-hover:opacity-100 transition-opacity duration-300"
                 />

@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col items-start lg:items-end gap-10 lg:pr-16">
             <div className="flex flex-col items-center gap-6 group mb-4">
               <img 
-                src="/public/images/Stj.png" 
+                src="/images/Stj.png" 
                 alt="Satyamev Jayate" 
                 className="h-48 md:h-[28rem] w-auto invert opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               />
